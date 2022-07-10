@@ -43,6 +43,14 @@ function addToCollection(title, artist, yearPublished){
 };
 console.log(addToCollection('No Code', 'Pearl Jam', 1996));
 console.log(addToCollection('Soul Power', 'Curtis Harding', 2014));
+console.log(addToCollection('Let My People Go', 'Darondo', 2005));
+console.log(addToCollection('Stink EP', 'The Replacements', 1982));
+console.log(addToCollection('Mezzanine', 'Massive Attack', 1998));
+console.log(addToCollection('Vaudeville Villain', 'Viktor Vaughn', 2003));
+
+
+
+
 
 
 
