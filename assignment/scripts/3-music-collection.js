@@ -42,5 +42,7 @@ function addToCollection(title, artist, yearPublished){
     return newRecord;
 };
 console.log(addToCollection('No Code', 'Pearl Jam', 1996));
+console.log(addToCollection('Soul Power', 'Curtis Harding', 2014));
+
 
 
