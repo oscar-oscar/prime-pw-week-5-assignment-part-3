@@ -49,7 +49,30 @@ console.log(addToCollection('Mezzanine', 'Massive Attack', 1998));
 console.log(addToCollection('Vaudeville Villain', 'Viktor Vaughn', 2003));
 
 
+console.log(collection);
+console.table(collection);
 
+/**
+ * function that is reused to show any collection and takes in an array as a parameter
+ * @param {*} collection 
+ * @returns 
+ */
+
+function showCollection(collection){
+    for( i = 0; i < collection.length; i+=1){
+        // console.log('Number of albums:', collection.length);
+
+       if(collection[i]){
+           // console.log(`${collection[i].title}`);//using template literal
+           console.log(collection[i].title + " " + 'by' + collection[i].artist + " " + 'in' + " " + collection[i].yearPublished);
+       }
+       
+
+    }return collection
+    
+}
+console.log('Number of albums:', collection.length);
+showCollection(collection);
 
 
 
