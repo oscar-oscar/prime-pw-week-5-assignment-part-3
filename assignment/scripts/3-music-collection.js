@@ -57,7 +57,7 @@ console.table(collection);
  * @param {*} collection 
  * @returns 
  */
-
+// don't think this is exactly what was needed to answer the probelm. The log shows the enitre collection, 
 function showCollection(collection){
     for( i = 0; i < collection.length; i+=1){
         // console.log('Number of albums:', collection.length);
@@ -93,19 +93,31 @@ as well as an artist you know is not in your collection. Check that for artists 
 //  let artistMatch = []; 
 
  function findByArtist(artistInput, collectionInput){
+        console.log('in findByartist', collectionInput);
     for( let artist of collectionInput){
-        if(artistInput === artist.artist){
+        if(artistInput == artist.artist){
             // artistMatch.push(artist)};
-            console.log('found:');
+            console.log('found:', artist.artist);
+            return true; 
         }
+        else{
+            return false;
+        }
+    
+        
             
-        }return artist;
+        }
+
+    
     
     }      
         
-    //lost...     
+  // the tutor session helped clarify my earlier problem
  
 
-console.log(findByArtist('Pearl Jam') , collection);
+console.log(findByArtist('Pearl Jam', collection));
+console.log(findByArtist('Cat Power', collection));
+console.log(findByArtist('Massive Attack', collection));
+console.log(findByArtist('Viktor Vaughn', collection));
 
 
