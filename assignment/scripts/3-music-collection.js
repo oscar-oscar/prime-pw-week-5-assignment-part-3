@@ -65,11 +65,10 @@ function showCollection(collection){
        if(collection[i]){
            // console.log(`${collection[i].title}`);//using template literal
            console.log(collection[i].title + " " + 'by' + collection[i].artist + " " + 'in' + " " + collection[i].yearPublished);
+           
        }
-       
-
-    }return collection
-    
+    } 
+    return collection;
 }
 console.log('Number of albums:', collection.length);
 console.log(showCollection(collection));
@@ -95,23 +94,16 @@ as well as an artist you know is not in your collection. Check that for artists 
  function findByArtist(artistInput, collectionInput){
         console.log('in findByartist', collectionInput);
     for( let artist of collectionInput){
-        if(artistInput == artist.artist){
+        if(artistInput === artist.artist){
             // artistMatch.push(artist)};
             console.log('found:', artist.artist);
             return true; 
-        }
-        else{
-            return false;
-        }
-    
-        
-            
-        }
-
-    
-    
-    }      
-        
+            }
+        //     else {
+        //         return false;
+        //     }
+         }
+ }         
   // the tutor session helped clarify my earlier problem
  
 
@@ -119,5 +111,6 @@ console.log(findByArtist('Pearl Jam', collection));
 console.log(findByArtist('Cat Power', collection));
 console.log(findByArtist('Massive Attack', collection));
 console.log(findByArtist('Viktor Vaughn', collection));
+console.log(findByArtist('The Replacements', collection));
 
 
